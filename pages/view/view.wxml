@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="banner">
+  <image src="https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></image>
+</view>
+<view class="modules clearfix">
+<block  wx:for="{{ modules}}" wx:key="{{index}}">
+
+  <navigator wx:if="{{item.type=='size'}}" url="{{'/pages/photo1/photo1'}}" hover-class="none" class="item">
+    <text>{{item.name}}</text>
+    <image src="{{'../../imgs/1.png'}}"></image>
+  </navigator>
+
+   <navigator wx:if="{{item.type=='num'}}" url="{{'/pages/photo2/photo2'}}" hover-class="none" class="item">
+    <text>{{item.name}}</text>
+    <image src="{{'../../imgs/2.png'}}"></image>
+  </navigator>
+
+   <navigator wx:if="{{item.type=='sort'}}" url="{{'/pages/photo3/photo3'}}" hover-class="none" class="item">
+    <text>{{item.name}}</text>
+    <image src="{{'../../imgs/3.png'}}"></image>
+  </navigator>
+
+   <navigator wx:if="{{item.type=='health'}}" url="{{'/pages/photo4/photo4'}}" hover-class="none" class="item">
+    <text>{{item.name}}</text>
+    <image src="{{'../../imgs/4.png'}}"></image>
+  </navigator>
+  <!-- <view  wx:else  class="item" bindtap="showTips">
+    <text>{{item.name}}</text>
+    <image src="{{'/resources/images/fruit'+(index+1)+'.png'}}"></image>
+  </view> -->
+</block>
+</view>
+

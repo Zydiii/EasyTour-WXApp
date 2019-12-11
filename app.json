@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/change/change",
+    "pages/history/history",
+    "pages/view/view",
+    "pages/takePhoto/takePhoto",
+    "pages/photo1/photo1",
+    "pages/photo2/photo2",
+    "pages/photo3/photo3",
+    "pages/photo4/photo4",
+    "pages/map/map",
+    "pages/map1/map1",
+    "pages/destination1/destination1",
+    "pages/destination/destination"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4b3c96",
+    "navigationBarTitleText": "简行",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#4b3c96"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "color": "#bfbfbf",
+    "selectedColor": "#1c1b21",
+    "list": [
+      {
+        "pagePath": "pages/view/view",
+        "text": "拍照识别",
+        "iconPath": "imgs/icon-3.png",
+        "selectedIconPath": "imgs/sel-icon-3.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "文字翻译",
+        "iconPath": "imgs/icon-1.png",
+        "selectedIconPath": "imgs/sel-icon-1.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "语音翻译",
+        "iconPath": "imgs/icon-2.png",
+        "selectedIconPath": "imgs/sel-icon-2.png"
+      },
+      {
+        "pagePath": "pages/map1/map1",
+        "text": "定位服务",
+        "iconPath": "imgs/icon-4.png",
+        "selectedIconPath": "imgs/sel-icon-4.png"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
